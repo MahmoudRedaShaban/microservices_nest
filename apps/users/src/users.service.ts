@@ -12,7 +12,6 @@ export class UsersService {
       password: 'password',
       createdAt: new Date(),
       updatedAt: new Date(),
-      deletedAt: null,
       isActive: true,
       age: 20,
       phone: '1234567890',
@@ -34,7 +33,6 @@ export class UsersService {
       password: 'password',
       createdAt: new Date(),
       updatedAt: new Date(),
-      deletedAt: null,
       isActive: true,
       age: 20,
       phone: '1234567890',
@@ -56,7 +54,7 @@ export class UsersService {
     return this.users;
   }
 
-  findOne(id:string):UserDto {
+  findOne(id:string):UserDto | undefined {
     return this.users.find((user) => user.id === id);
   }
 
