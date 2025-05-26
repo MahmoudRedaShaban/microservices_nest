@@ -1,0 +1,118 @@
+# NestJS and Microservices Development Rules
+
+## Code Style and Structure
+
+- Use TypeScript for all new code
+- Follow NestJS naming conventions:
+  - Controllers: `*.controller.ts`
+  - Services: `*.service.ts`
+  - Modules: `*.module.ts`
+  - DTOs: `*.dto.ts`
+  - Entities: `*.entity.ts`
+  - Interfaces: `*.interface.ts`
+  - Constants: `*.constants.ts`
+  - Guards: `*.guard.ts`
+  - Pipes: `*.pipe.ts`
+  - Filters: `*.filter.ts`
+  - Interceptors: `*.interceptor.ts`
+
+## Architecture Rules
+
+- Follow Domain-Driven Design (DDD) principles
+- Use feature modules to organize code
+- Implement proper separation of concerns
+- Use dependency injection consistently
+- Follow SOLID principles
+- Implement proper error handling and logging
+
+## Microservices Best Practices
+
+- Use appropriate transport layer (TCP, Redis, MQTT, etc.)
+- Implement proper service discovery
+- Use message patterns for communication
+- Implement circuit breakers for resilience
+- Use proper error handling and retry mechanisms
+- Implement proper logging and monitoring
+- Use appropriate serialization/deserialization
+
+## Security Rules
+
+- Implement proper authentication and authorization
+- Use environment variables for sensitive data
+- Implement proper input validation
+- Use proper encryption for sensitive data
+- Implement proper rate limiting
+- Use proper CORS configuration
+- Implement proper security headers
+
+## Testing Rules
+
+- Write unit tests for all services
+- Write integration tests for controllers
+- Write e2e tests for critical paths
+- Use proper mocking and stubbing
+- Follow AAA pattern (Arrange, Act, Assert)
+- Maintain good test coverage
+
+## Documentation Rules
+
+- Document all public APIs
+- Use proper JSDoc comments
+- Document all environment variables
+- Document all configuration options
+- Document all dependencies
+- Document all deployment steps
+
+## Performance Rules
+
+- Implement proper caching
+- Use proper database indexing
+- Implement proper pagination
+- Use proper connection pooling
+- Implement proper load balancing
+- Use proper compression
+
+## Code Quality Rules
+
+- Use proper linting (ESLint)
+- Use proper formatting (Prettier)
+- Use proper type checking
+- Use proper error handling
+- Use proper logging
+- Use proper debugging
+
+## Git Rules
+
+- Use proper branching strategy
+- Write proper commit messages
+- Use proper pull request templates
+- Use proper issue templates
+- Use proper code review process
+- Use proper CI/CD pipeline
+
+## Deployment Rules
+
+- Use proper containerization
+- Use proper orchestration
+- Use proper monitoring
+- Use proper logging
+- Use proper backup strategy
+- Use proper disaster recovery
+
+## Maintenance Rules
+
+- Keep dependencies up to date
+- Remove unused code
+- Fix security vulnerabilities
+- Improve code quality
+- Improve performance
+- Improve documentation
+
+## Communication Rules
+
+- Use proper communication channels
+- Use proper documentation
+- Use proper issue tracking
+- Use proper project management
+- Use proper team collaboration
+- Use proper knowledge sharing
