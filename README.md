@@ -23,7 +23,13 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a NestJS monorepo implementing a bookstore application using a microservice architecture. It consists of the following services:
+
+- **Bookstore API Gateway (`bookstore-api-geteway`):** The entry point for client requests, routing them to the appropriate microservices.
+- **Books Service (`books`):** Manages book-related data and operations.
+- **Users Service (`users`):** Manages user-related data and operations.
+
+The monorepo also includes a `contracts` library for shared interfaces and data transfer objects.
 
 ## Project setup
 
@@ -31,18 +37,54 @@
 $ npm install
 ```
 
+This will install dependencies for all applications and libraries in the monorepo.
+
 ## Compile and run the project
+
+To run the project, you need to start each microservice and the API Gateway. The order might matter depending on service dependencies and how they communicate.
+
+Below are the basic commands to start each application. You may need to run these in separate terminal windows.
+
+**Running the API Gateway:**
 
 ```bash
 # development
-$ npm run start
+$ npm run start bookstore-api-geteway
 
 # watch mode
-$ npm run start:dev
+$ npm run start:dev bookstore-api-geteway
 
 # production mode
-$ npm run start:prod
+$ npm run start:prod bookstore-api-geteway
 ```
+
+**Running the Books Service:**
+
+```bash
+# development
+$ npm run start books
+
+# watch mode
+$ npm run start:dev books
+
+# production mode
+$ npm run start:prod books
+```
+
+**Running the Users Service:**
+
+```bash
+# development
+$ npm run start users
+
+# watch mode
+$ npm run start:dev users
+
+# production mode
+$ npm run start:prod users
+```
+
+_(Note: The specific commands to run each service might vary based on your `package.json` scripts and how your microservices are configured to communicate.)_
 
 ## Run tests
 
